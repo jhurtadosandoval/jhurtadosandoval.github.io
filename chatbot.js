@@ -50,9 +50,25 @@ function generateResponse(input) {
       "Is there anything specific you'd like to ask or talk about? I'm here to help with any questions or concerns you may have. 💬",
       "I'm here to assist you with any questions or problems you may have. How can I help you today? 💡",
     ];
-    
+    if (input.toUpperCase().includes("CALL")) {
+      return "If you are asking about what source i "
+      
+    }
+    else if (input.toUpperCase().includes("TOKEN") || input.toUpperCase().includes("AUTHENTICATION"))
+     {
+      return "I don't feel comfortable sharing my Token over chat. What if you hack me. I can assure you that I am making sure to include 'Bearer ' before my token. "
+      
+    }
+
+    else if (input.toUpperCase().includes("TOKEN") || input.toUpperCase().includes("AUTHENTICATION"))
+     {
+      return "I don't feel comfortable sharing my Token over chat. What if you hack me. I can assure you that I am making sure to include 'Bearer ' before my token. "
+      
+    }
+
     // Return a random response
-    return responses[Math.floor(Math.random() * responses.length)];
+    // return responses[Math.floor(Math.random() * responses.length)];
+    return input
   }
   
   
