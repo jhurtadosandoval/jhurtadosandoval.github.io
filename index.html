@@ -1,36 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Question from J. Doe</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Create Your Own Chatbot</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,300">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400&family=Finger+Paint&display=swap">
 </head>
 <body>
-    <div class="chatbot-container">
-        <div id="header">
-            <h1>API Question from Teal Koala</h1>
-        </div>
-        <div id="chatbot">
-            <div id="conversation">
-              <div class="chatbot-message">
-                <p class="chatbot-text">Hi Frame Support! I am trying to upload a video to my account using the API. Even though the call to the API is successful, I'm only seeing a qeued black video on the Web App. Please help</p>
-              </div>
-            </div>
-            <form id="input-form">
-              <message-container>
-                <input id="input-field" type="text" placeholder="Type your message here">
-                <button id="submit-button" type="submit">
-                  <img class="send-icon" src="send-message.png" alt="">
-                </button>
-              </message-container>
-                
-            </form>
-        </div>  
-
+  <div class="card">
+    <div id="header">
+      <h1>API Question from J. Doe</h1>
     </div>
-
-    <script src="chatbot.js"></script>
+    <div id="message-section">
+      <div class="message" id="bot"><span id="bot-response">Hi Frame Support! I am trying to upload a video to my account using the API. Even though the call to the API is successful, I'm only seeing a qeued black video on the Web App. Please help</span></div>
+    </div>
+    <div id="input-section">
+      <div class="choices">
+        <button onclick="sendMessage(this.textContent)">Tell me more about your token.</button>
+        <button onclick="sendMessage(this.textContent)">Are you getting an error code?</button>
+        <button onclick="sendMessage(this.textContent)">Can you share a screenshot?</button>
+        <!-- Add more buttons with different choices here -->
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
