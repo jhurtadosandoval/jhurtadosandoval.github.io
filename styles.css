@@ -12,11 +12,11 @@ body {
   background: #ccc;
 }
 body .card {
-  height: 45vw;
-  width: 35vw;
+  height: 80vw;
+  width: 60vw;
   background-color: white;
-  margin-left: 30vw;
-  margin-top: 5vw;
+  margin-left: 20vw;
+  margin-top: 6vw;
   box-shadow: 2vw 2vw 12vw 3vw #ccc;
 }
 body .card #header {
