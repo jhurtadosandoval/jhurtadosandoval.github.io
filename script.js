@@ -69,6 +69,25 @@ function sendMessage(choice) {
     
   }
 
+  function showEndpointChoices(){
+    const choiceButtons = document.getElementById("choiceButtons");
+    const defaultChoices = [
+      "Can you share your request?",
+      "What is the source of your asset?",
+      "Back"
+    ];
+
+    
+
+    defaultChoices.forEach((choice) => {
+      const button = document.createElement("button");
+      button.textContent = choice;
+      button.onclick = () => sendMessage(choice);
+      choiceButtons.appendChild(button);
+    });
+    
+  }
+
 
   document.addEventListener("DOMContentLoaded", () => {
     const inputField = document.getElementById("input");
@@ -103,7 +122,7 @@ function sendMessage(choice) {
     
     else if (stateVar === "correct usage of endpoint"){
       choiceButtons.innerHTML = "";
-      showResponseChoices();
+      showEndpointChoices();
 
 
     }
@@ -136,6 +155,18 @@ function sendMessage(choice) {
     else if (stateVar === "what are the scopes of your token?"){
       var question = "What are the permissions you enabled for your token when you created it?";
       var answer = "I selected all scopes for my token. Also, I don't think it's a permission issue since a new queued asset is created and I get a 200 status response that my call to create the asset was successful.";
+      addChat(question,answer)
+
+    }
+    else if (stateVar === "can you share your request?"){
+      var question = "What are the permissions you enabled for your token when you created it?";
+      var answer = "I selected all scopes for my token. Also, I don't think it's a permission issue since a new queued asset is created and I get a 200 status response that my call to create the asset was successful.";
+      addChat(question,answer)
+
+    }
+    else if (stateVar === "what is the source of your asset?"){
+      var question = "What is the source of your asset? Is your asset publicly accessible online via URL?";
+      var answer = "No, I do not want my asset to be public to everyone. I am trying to upload an mp4 from my computer.";
       addChat(question,answer)
 
     }
