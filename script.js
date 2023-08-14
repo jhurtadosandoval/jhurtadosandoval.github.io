@@ -153,6 +153,8 @@ function outputImage(url, altText){
       var question = "Could you share the body of the response?";
       var answer = "Sure. The response is pretty long. Here is part of it";
       addChat(question,answer)
+      outputImage("https://github.com/jhurtadosandoval/jhurtadosandoval.github.io/blob/main/response.png?raw=true","any")
+
 
     }
 
@@ -164,8 +166,7 @@ function outputImage(url, altText){
     else if (stateVar === "do you own the project?"){
       var question = "Are you the owner of the account and project you are trying to create a new asset in?";
       var answer = "Yes, I am the account owner and also own the project. I created my developer Token using my owner account.";
-      //addChat(question,answer)
-      outputImage("https://github.com/jhurtadosandoval/jhurtadosandoval.github.io/blob/main/request.png?raw=true","any")
+      addChat(question,answer)
 
     }
 
@@ -176,9 +177,11 @@ function outputImage(url, altText){
 
     }
     else if (stateVar === "can you share your request?"){
-      var question = "What are the permissions you enabled for your token when you created it?";
-      var answer = "I selected all scopes for my token. Also, I don't think it's a permission issue since a new queued asset is created and I get a 200 status response that my call to create the asset was successful.";
+      var question = "Could you share the request of your call to the API?";
+      var answer = "Sure, here's the body of my request. I followed the documentation in the Developer portal.";
       addChat(question,answer)
+      outputImage("https://github.com/jhurtadosandoval/jhurtadosandoval.github.io/blob/main/request.png?raw=true","any")
+
 
     }
     else if (stateVar === "what is the source of your asset?"){
