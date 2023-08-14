@@ -15,6 +15,22 @@ function sendMessage(choice) {
 
 }
 
+function outputImage(url, altText){
+  const messageSection = document.getElementById("message-section");
+  const imgElement = document.createElement("img");
+  imgElement.src=url;
+  imgElement.alt = altText;
+  imgElement.classList.add("chat-image");
+
+  const messageContainer = document.createElement("div");
+  messageContainer.classList.add("message");
+  messageContainer.appendChild(imgElement);
+
+  messageSection.appendChild(messageContainer);
+
+  messageSection.scrollTop = messageSection.scrollHeight;
+}
+
   function showDefaultChoices(){
     const choiceButtons = document.getElementById("choiceButtons");
     const defaultChoices = [
@@ -35,7 +51,7 @@ function sendMessage(choice) {
     const choiceButtons = document.getElementById("choiceButtons");
     const defaultChoices = [
       "Are you getting an error code?",
-      "What is the full response you get from the API?",
+      "Could you share the response?",
       "Back"
     ];
 
@@ -133,9 +149,9 @@ function sendMessage(choice) {
 
     }
 
-    else if (stateVar === "what is the full response you get from the api?"){
-      var question = "Could you share with us the full response you are getting from your call?";
-      var answer = "Sure. ";
+    else if (stateVar === "could you share the response?"){
+      var question = "Could you share the body of the response?";
+      var answer = "Sure. The response is pretty long. Here is part of it";
       addChat(question,answer)
 
     }
@@ -148,7 +164,8 @@ function sendMessage(choice) {
     else if (stateVar === "do you own the project?"){
       var question = "Are you the owner of the account and project you are trying to create a new asset in?";
       var answer = "Yes, I am the account owner and also own the project. I created my developer Token using my owner account.";
-      addChat(question,answer)
+      //addChat(question,answer)
+      outputImage("https://as2.ftcdn.net/jpg/00/97/58/97/220_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg","any")
 
     }
 
