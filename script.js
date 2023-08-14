@@ -178,7 +178,7 @@ function outputImage(url, altText){
     }
     else if (stateVar === "can you share your request?"){
       var question = "Could you share the request of your call to the API?";
-      var answer = "Sure, here's the body of my request. I followed the documentation in the Developer portal.";
+      var answer = "Sure, here's the body of my request. I followed the documentation in the Developer portal. I am calling POST/v2/assets/{asset_id}/children";
       addChat(question,answer)
       outputImage("https://github.com/jhurtadosandoval/jhurtadosandoval.github.io/blob/main/request.png?raw=true","any")
 
