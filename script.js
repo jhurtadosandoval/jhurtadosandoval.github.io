@@ -165,7 +165,7 @@ function outputImage(url, altText){
       var question = "Are you the owner of the account and project you are trying to create a new asset in?";
       var answer = "Yes, I am the account owner and also own the project. I created my developer Token using my owner account.";
       //addChat(question,answer)
-      outputImage("https://as2.ftcdn.net/jpg/00/97/58/97/220_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg","any")
+      outputImage("https://github.com/jhurtadosandoval/jhurtadosandoval.github.io/blob/main/request.png?raw=true","any")
 
     }
 
