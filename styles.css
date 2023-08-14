@@ -43,6 +43,7 @@ body .card #message-section {
 body .card #message-section::-webkit-scrollbar-track {
   background: var(--scrollbarBG);
 }
+
 body .card #message-section::-webkit-scrollbar-thumb {
   background-color: var(--thumbBG);
   border-radius: 6px;
@@ -124,4 +125,10 @@ body .card .send .circle i {
   font-size: 3vw;
   margin-left: -1vw;
   margin-top: 1vw;
+}
+.chat-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 5px 0;
 }
