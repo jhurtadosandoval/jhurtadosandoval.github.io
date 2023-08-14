@@ -1,5 +1,5 @@
 * {
-  font-size: 1.3vw;
+  font-size: 2vw;
   font-family: "Epilogue", sans-serif;
 }
 
@@ -12,8 +12,8 @@ body {
   background: #ccc;
 }
 body .card {
-  height: 46vw;
-  width: 70vw;
+  height: 60vw;
+  width: 100vw;
   background-color: white;
   margin-left: 20vw;
   margin-top: 6vw;
@@ -72,7 +72,7 @@ body .card #message-section #user #user-response {
 body .card #message-section .message {
   color: #000;
   clear: both;
-  line-height: 1.2vw;
+  line-height: 2.5vw;
   font-size: 3vw;
   padding: 8px;
   position: relative;
