@@ -12,8 +12,8 @@ body {
   background: #ccc;
 }
 body .card {
-  height: 80vw;
-  width: 60vw;
+  height: 46vw;
+  width: 70vw;
   background-color: white;
   margin-left: 20vw;
   margin-top: 6vw;
@@ -73,7 +73,7 @@ body .card #message-section .message {
   color: #000;
   clear: both;
   line-height: 1.2vw;
-  font-size: 1.2vw;
+  font-size: 3vw;
   padding: 8px;
   position: relative;
   margin: 8px 0;
